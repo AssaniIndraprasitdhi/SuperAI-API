@@ -1,6 +1,6 @@
 # 🎙️ Vaoja TTS API Proxy (FastAPI)
 
-ระบบ Proxy สำหรับใช้งาน Vaoja Text-to-Speech (TTS) API อย่างเป็นระบบ ด้วย FastAPI  
+ระบบ Proxy สำหรับใช้งาน Vaoja Text-to-Speech (TTS) API อย่างเป็นระบบด้วย FastAPI  
 รองรับ `.env`, โครงสร้างแยกไฟล์ชัดเจน, และ API สำหรับแปลงข้อความอีสานเป็นเสียง
 
 ---
@@ -16,6 +16,7 @@
 ---
 
 ## 🧱 โครงสร้างโปรเจกต์
+
 backend/
 ├── app/
 │ ├── api/ # FastAPI routes
@@ -26,9 +27,9 @@ backend/
 │ │ └── tts_service.py
 │ ├── utils/ # HTTP client helper
 │ │ └── http_client.py
-├── .env
+├── .env # Env variables (excluded from git)
 ├── main.py # FastAPI entry point
-├── requirements.txt
+├── requirements.txt # Python dependencies
 
 
 ---
@@ -39,10 +40,9 @@ backend/
 ```bash
 git clone https://github.com/your-username/Vaoja-TTS-Proxy.git
 cd Vaoja-TTS-Proxy/backend
-
 2. สร้าง Virtual Environment และติดตั้ง dependency
 python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
+source .venv/bin/activate       # สำหรับ Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 3. สร้างไฟล์ .env
 VAOJA_API_BASE=https://vaoja-api.computing.kku.ac.th
@@ -64,7 +64,6 @@ Response:
   "audio_url": "https://vaoja-api.computing.kku.ac.th/media/output.mp3",
   "qr_code": "https://vaoja-api.computing.kku.ac.th/media/output_qrcode.png"
 }
-
 📘 เทคโนโลยีที่ใช้
 
 Tool	Description
@@ -84,6 +83,3 @@ MIT License © 2025 Assani Indraprasitdhi
 
 
 ---
-
-คุณสามารถก็อปวางลงในไฟล์ `backend/README.md` ได้เลยครับ  
-หากต้องการเวอร์ชันที่มี frontend รวมด้วยใน repo นี้ หรือเชื่อม API บนเว็บ GUI ก็บอกได้เลย ผมจะช่วยเขียน README เวอร์ชันเต็มให้อีกทีครับ ✅
