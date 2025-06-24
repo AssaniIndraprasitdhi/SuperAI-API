@@ -1,0 +1,41 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.log
+
+# 📦 Virtual Environment
+.venv/
+env/
+venv/
+
+# 🛠 IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 🔐 Environment Variables
+.env
+.env.*
+
+# 📄 OS
+.DS_Store
+Thumbs.db
+
+# 🔍 Test Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 🚀 Uvicorn / FastAPI reload artifacts
+*.pid
+*.db
+*.sqlite3
+
+# 📁 Dist / Build
+build/
+dist/
+*.egg-info/
