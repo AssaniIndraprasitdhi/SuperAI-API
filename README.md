@@ -87,7 +87,7 @@ pip install -r requirements.txt
 Create a `.env` file with the following:
 
 ```env
-VAOJA_API_BASE=https://vaoja-api.computing.kku.ac.th
+VAOJA_API_BASE=YOUR_API_KEY
 ```
 
 ---
