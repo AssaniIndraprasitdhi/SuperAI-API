@@ -160,4 +160,4 @@ You can:
 
 ## 📄 License
 
-MIT License © 2025 [Assani Indraprasitdhi](https://github.com/AssaniIndraprasitdhi)
+Apache License 2.0 © 2025 [Assani Indraprasitdhi](https://github.com/AssaniIndraprasitdhi)
